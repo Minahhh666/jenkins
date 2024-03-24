@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('build') {
+      steps {
+        sh 'python3 ops.py'
+      }
+    }
+
   }
 }
